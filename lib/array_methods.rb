@@ -14,14 +14,12 @@ def find_max_value(array)
   max = array[0]
   counter = 1
   while counter < array.length do 
-    if max >= array[counter]
-      max = max
-    else 
+    if max < array[counter]
       max = array[counter]
     end
     counter++
   end
-  max
+  return max
 end
 
 # def find_min_value(array)
